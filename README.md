@@ -68,6 +68,7 @@ Then, inside the shell, use the following Python code to create a regular user:
 from django.contrib.auth.models import User
 user = User.objects.create_user('regularuser', 'user@example.com', 'password123')
 ```
+This will create a regular user with the username `regularuser` and password `password123`.
 
 7. **Run the Development Server**
 + Once the setup is complete, you can run the Django development server to start the application:
