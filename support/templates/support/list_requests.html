@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Requests</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link href="{% static 'support/css/list_requests.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Back Button -->
+    <a href="javascript:window.history.back();" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+
+    <div class="container">
+        <h1>All Service Requests</h1>
+
+        <!-- Card containing the table -->
+        <div class="card">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Submitted At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for request in requests %}
+                    <tr data-id="{{ request.id }}">
+                        <td>{{ request.customer.name }}</td>
+                        <td>{{ request.request_type }}</td>
+                        <td class="status-{{ request.status | lower }}">{{ request.status }}</td>
+                        <td>{{ request.submitted_at }}</td>
+                        <td>{{ request.resolved_at|default:"Not Resolved Yet" }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

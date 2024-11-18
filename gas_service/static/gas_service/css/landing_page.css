@@ -1,0 +1,110 @@
+/* Custom styles for the landing page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f0f0f5; /* Soft light gray to contrast with the blue and green theme */
+    color: #333; /* Dark text for readability */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    background: #005b96; /* A darker blue for a professional and trustworthy look */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    flex: 1; /* Allow this section to take available space */
+}
+
+.hero-section h1 {
+    font-size: 2.75rem; /* Larger font size */
+    font-weight: 600;
+}
+
+.hero-section p {
+    font-size: 1.25rem; /* Slightly larger text for clarity */
+    margin: 20px 0;
+}
+
+.cta-btns {
+    margin-top: 25px;
+}
+
+.cta-btns .btn {
+    font-size: 1rem;
+    padding: 14px 35px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.cta-btns .btn-primary {
+    background-color: #006db3;
+    border: none;
+}
+
+.cta-btns .btn-primary:hover {
+    background-color: #004a75;
+}
+
+.cta-btns .btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.cta-btns .btn-success:hover {
+    background-color: #218838;
+}
+
+.services-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    flex: 1; /* Allow this section to take available space */
+}
+
+.services-section h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #005b96;
+}
+
+.service-card {
+    background: #e0f7fa;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    flex: 1 0 30%;
+    transition: all 0.3s ease;
+}
+
+.service-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+}
+
+/* Hover effect on service cards */
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background-color: #b2ebf2;
+}
+
+/* Ensure the page fits within the viewport without scrolling */
+.hero-section, .services-section {
+    flex: 0 1 auto; /* Ensures these sections don't grow past the screen size */
+}

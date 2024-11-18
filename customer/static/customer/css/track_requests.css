@@ -1,0 +1,90 @@
+body {
+    background-color: #f0f0f5;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #005b96;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #006db3 !important;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+.status-pending {
+    color: #ff9800;
+    font-weight: 600;
+}
+
+.status-resolved {
+    color: #4caf50;
+    font-weight: 600;
+}
+
+.status-in-progress {
+    color: #2196f3;
+    font-weight: 600;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn:hover {
+    background-color: #aaa;
+}
+
+.back-btn i {
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+}

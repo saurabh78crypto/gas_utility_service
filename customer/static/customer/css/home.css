@@ -1,0 +1,104 @@
+/* Custom styles */
+body {
+    background-color: #f0f0f5;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #005b96;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #005b96;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cta-btns .btn {
+    font-size: 0.9rem;
+    padding: 10px 30px;
+    margin: 8px;
+    border-radius: 50px;
+}
+
+.cta-btns .btn-primary {
+    background-color: #006db3;
+    border: none;
+}
+
+.cta-btns .btn-primary:hover {
+    background-color: #004a75;
+}
+
+.cta-btns .btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.cta-btns .btn-success:hover {
+    background-color: #218838;
+}
+
+.section-content {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 30px 20px;
+}
+
+.section-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn:hover {
+    background-color: #aaa;
+}
+
+.back-btn i {
+    font-size: 1.2rem;
+}
+
+/* Grid Layout for Sections */
+.row-cols-1, .row-cols-md-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-content {
+    width: 100%;
+    margin: 10px;
+}
+
+@media (min-width: 576px) {
+    .back-btn {
+        font-size: 1.2rem;
+    }
+}

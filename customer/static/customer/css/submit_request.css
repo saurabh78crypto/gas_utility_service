@@ -1,0 +1,73 @@
+body {
+    background-color: #f0f0f5;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.form-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 10px;
+    max-width: 90%;
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #005b96;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cta-btns .btn {
+    font-size: 0.9rem;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.cta-btns .btn-primary {
+    background-color: #006db3;
+    border: none;
+}
+
+.cta-btns .btn-primary:hover {
+    background-color: #004a75;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.75rem;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn:hover {
+    background-color: #aaa;
+}
+
+.back-btn i {
+    font-size: 1.2rem;
+}
