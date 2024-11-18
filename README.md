@@ -26,6 +26,7 @@ cd gas_utility_service
 2. **Create a Virtual Environment**
 + It is recommended to use a virtual environment to manage dependencies. You can create and activate the   
   virtual environment with the following commands:
+
 **For Windows:**
 ```bash
 python -m venv venv
@@ -65,6 +66,7 @@ python manage.py runserver
 The application will be available at `http://127.0.0.1:8000/`.
 
 7. **Access the Admin Panel**
-To access the Django admin panel, you simply login through the username and password entered during the creation of the superuser.
++ To access the Django admin panel, you simply login through the username and password entered during the 
+  creation of the superuser.
 
 
