@@ -58,15 +58,28 @@ python manage.py createsuperuser
 ```
 You will be prompted to enter a username, email, and password for the superuser.
 
-6. **Run the Development Server**
+6. **Create a Regular User**
++ Since there is no registration system, you can create a regular user using the Django shell. Run the following command in the rrot directory:
+```bash
+python manage.py shell
+```
+Then, inside the shell, use the following Python code to create a regular user:
+```bash
+from django.contrib.auth.models import User
+user = User.objects.create_user('regularuser', 'user@example.com', 'password123')
+```
+
+7. **Run the Development Server**
 + Once the setup is complete, you can run the Django development server to start the application:
 ```bash
 python manage.py runserver
 ```
 The application will be available at `http://127.0.0.1:8000/`.
 
-7. **Access the Admin Panel**
+8. **Access the Admin Panel**
 + To access the Django admin panel, you simply login through the username and password entered during the 
   creation of the superuser.
 
+9. **Login as Regular User**
++ To log in as a regular user, use the credentials you created in step 6 (`regularuser` and `password123`) through the login page.
 
